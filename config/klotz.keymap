@@ -103,10 +103,20 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <40>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
-     
+        combo_dot {
+            timeout-ms = <40>;
+            key-positions = <12 13>;
+            bindings = <&kp DOT>;
+        };
+        combo_comma {
+            timeout-ms = <40>;
+            key-positions = <11 12>;
+            bindings = <&kp COMMA>;
+        };
+        
     };
    
 
