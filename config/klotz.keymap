@@ -106,12 +106,7 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        combo_kneir_mac_layer {
-            timeout-ms = <40>;
-            key-positions = <6 9>;
-            bindings = <&to 5>;
-            layers = <0 1 2 3 4 5>;
-        };
+     ‚
     };
    
 
