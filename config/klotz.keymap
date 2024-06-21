@@ -99,17 +99,21 @@
                 , <&macro_release &kp LALT>;
         )
     };
-    combo_esc {
-        timeout-ms = <40>;
-        key-positions = <0 1>;
-        bindings = <&kp ESC>;
+     combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <40>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        combo_kneir_mac_layer {
+            timeout-ms = <40>;
+            key-positions = <6 9>;
+            bindings = <&to 5>;
+            layers = <0 1 2 3 4 5>;
+        };
     };
-    combo_kneir_mac_layer {
-        timeout-ms = <40>;
-        key-positions = <6 9>;
-        bindings = <&to 5>;
-        layers = <0 1 2 3 4 5>;
-    };
+   
 
         keymap {
                 compatible = "zmk,keymap";
@@ -134,8 +138,8 @@ label= "BASE"                              ;
 
                         >;               
 
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            sensor-bindings = <&inc_dec_kp  LEFT  RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            //sensor-bindings = <&inc_dec_kp  LEFT  RIGHT>;
      };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -227,8 +231,8 @@ label= "WORKMAN"                              ;
 
                         >;               
 
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            sensor-bindings = <&inc_dec_kp  LEFT  RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            //sensor-bindings = <&inc_dec_kp  LEFT  RIGHT>;
      };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
